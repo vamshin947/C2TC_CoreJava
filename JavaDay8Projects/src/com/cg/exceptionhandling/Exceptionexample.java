@@ -1,6 +1,6 @@
 package com.cg.exceptionhandling;
 
-public class exceptionexamples {
+public class Exceptionexample {
 
 	public static void main(String[] args) throws Exception{
 		

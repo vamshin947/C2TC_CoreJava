@@ -1,6 +1,6 @@
 package com.cg.exceptionhandling;
 
-public class finalexcception {
+public class FinalException {
 
 	public static void main(String[] args) {
 		try {

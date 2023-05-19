@@ -6,7 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.InputStreamReader;
 
-public class Throwkeyword {
+public class Throwkeywordd {
 
 	public static void main(String[] args) throws Exception {
 		File file = new File("./sample.txt");

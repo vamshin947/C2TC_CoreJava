@@ -1,6 +1,6 @@
 package com.cg.exceptionhandling;
 
-public class smpleprogram {
+public class SampleProgram {
 
 	public static void main(String[] args) {
 		System.out.println("start of program");

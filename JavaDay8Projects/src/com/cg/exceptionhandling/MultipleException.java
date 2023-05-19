@@ -3,14 +3,12 @@ package com.cg.exceptionhandling;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.InputStreamReader;
 
-public class Trywithresources {
-	
-	
-	//every thing cannot be used in try block to close using try block 
-	//which ever condition satisfy the Auto closable used in try block.
+public class MultipleException{
+
 		public static void main(String[] args) throws Exception {
 			File file = new File("./sample.txt");
 			if(!file.exists())
@@ -28,10 +26,16 @@ public class Trywithresources {
 					test +=line+"\n";
 				}
 				System.out.println(test);
-			}catch(Exception e) {
+				
+				int[] arr = {1,2};
+				System.out.println(arr[2]/0);
+			}
+			catch(FileNotFoundException | ArrayIndexOutOfBoundsException e) {
 				e.printStackTrace();
 			}
-
+//			catch(ArrayIndexOutOfBoundsException ar) {
+//				ar.printStackTrace();
+//			}
+				
 	}
-
-}
+	}
